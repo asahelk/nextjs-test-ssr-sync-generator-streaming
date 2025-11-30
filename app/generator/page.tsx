@@ -1,9 +1,11 @@
 
 import ItemList from "@/components/ItemList";
 import { Suspense } from "react";
-import { Chunk, Pokemon } from "../type";
+import type { Chunk, Pokemon } from "../type";
 import { createDeferredGenerator, DeferredGenerator } from "./helper";
 import { generatorComponent } from "@/components/generator";
+
+// https://www.youtube.com/live/yjNjU-nGE7w?si=-mr_nfVBejrSRDhh&t=10693
 
 interface Props {
     searchParams: Promise<{limit: string, offset: string}>
